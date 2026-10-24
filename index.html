@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Record Label</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo" data-name></a>
+    <nav>
+      <a href="#artists">Artists</a>
+      <a href="#releases">Releases</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn btn-small">Submit a demo</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow"></div>
+        <h1><img src="images/logo.png" alt="Soundteller Records" class="hero-logo"></h1>
+      <p class="tagline" data-tagline></p>
+      <div class="hero-actions">
+        <a href="#releases" class="btn">Listen now</a>
+        <a href="#contact" class="btn btn-ghost">Submit a demo</a>
+      </div>
+      <div class="eq" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </section>
+
+    <section id="artists" class="section">
+      <h2>Artists</h2>
+      <div class="grid artists" id="artists-grid"></div>
+    </section>
+
+    <section id="releases" class="section">
+      <h2>Latest Releases</h2>
+      <div class="grid releases" id="releases-grid"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <p data-about></p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Got music?</h2>
+      <p>Send your demos and we'll give them a listen.</p>
+      <a class="btn" id="email-link"></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="socials" id="socials"></div>
+    <p>&copy; <span id="year"></span> <span data-name></span>. All rights reserved.</p>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
